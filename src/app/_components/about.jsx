@@ -2,6 +2,8 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BsWhatsapp } from "react-icons/bs";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+
 
 export default function About() {
    return (
@@ -88,6 +90,15 @@ export default function About() {
                               className="p-3 block"
                            >
                               <FaFacebookF size={22} />
+                           </a>
+                        </div>
+                        <div className="cursor-pointer bg-[#1877f2]  rounded-full hover:bg-white hover:text-[#1877f2] transition">
+                           <a
+                              href="tel:201212384862"
+                              target="_blank"
+                              className="p-3 block"
+                           >
+                              <IoCall size={22}/>
                            </a>
                         </div>
                      </div>
