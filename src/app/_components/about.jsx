@@ -7,7 +7,7 @@ import { IoCall } from "react-icons/io5";
 export default function About() {
    return (
       <>
-         <div className="h-screen flex justify-center items-center" id="about">
+         <div className="pt-20 flex justify-center items-center" id="about">
             <div className="">
                <div className="sec-title  text-center pb-10">
                   <h2>
