@@ -12,21 +12,13 @@
    --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-   :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
-   }
-}
-
 html {
-      scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body {
-   color: var(--foreground);
+   color: #ededed;
    font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .active {
@@ -57,4 +49,31 @@ body {
    backdrop-filter: blur(25px) saturate(200%);
    -webkit-backdrop-filter: blur(25px) saturate(200%);
    background-color: rgba(17, 25, 40, 0.9);
+}
+
+.sec-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sec-title h2 {
+   font-size: 30px;
+   font-weight: 600;
+   position: relative;
+   width: fit-content;
+   padding: 10px 0px;
+}
+.sec-title span {
+   /* color: #00a8cd; */
+}
+.sec-title h2::after {
+   content: "";
+   width: 140%;
+   height: 2px;
+   position: absolute;
+   background-color: #00a8cd;
+   /* background-image: linear-gradient(to right , #00a8cd, transparent); */
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
 }

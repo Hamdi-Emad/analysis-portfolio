@@ -11,9 +11,30 @@ export default function Landing() {
          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen">
             <div className="w-full text-sec flex justify-center items-center ">
                <div className=" w-full">
+                  {/* <h1 className="text-3xl lg:text-6xl text-center md:text-start text-white font-bold">
+                     <span className="block text-4xl md:text-5xl  text-[#ffffffc7]">
+                        Hello, I'm
+                     </span>
+                     <span className="text-4xl lg:text-7xl block py-10 text-[#00a8cd]">
+                        Hamdi Emad
+                     </span>
+                     <span className=" block text-4xl md:text-5xl pb-10 text-nowrap">
+                        <Typewriter
+                           options={{
+                              strings: ["DATA ANALYST"],
+                              autoStart: true,
+                              loop: true,
+                              delay: 100,
+                              cursor: "_",
+                              deleteSpeed: 50,
+                           }}
+                        />
+                     </span>
+                  </h1> */}
+
                   <h1 className="text-3xl lg:text-6xl text-center md:text-start text-white font-bold">
                      Hi, I'm <span className="text-[#00a8cd]">Hamdi</span>
-                     <span className="text-4xl lg:text-7xl block py-10">
+                     <span className="text-4xl lg:text-7xl block py-10 text-nowrap">
                         <Typewriter
                            options={{
                               strings: ["DATA ANALYST"],
@@ -21,21 +42,21 @@ export default function Landing() {
                               loop: true,
                               delay: 100,
                               cursor: "",
-                              deleteSpeed: 50,
+                              deleteSpeed: 70,
                            }}
                         />
                      </span>
                   </h1>
                   <div className="flex flex-col md:flex-row gap-3  items-center ">
-                     <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-5 rounded-[5px] flex justify-between gap-2 items-center">
+                     <button className="bg-[#00a8cd] w-[50%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                         <span>
-                           <FileUser size={25} />
+                           <FileUser size={23} />
                         </span>
                         <span className="text-nowrap">View Resume</span>
                      </button>
-                     <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-5 rounded-[5px] flex justify-between gap-2 items-center">
+                     <button className="bg-[#00a8cd] w-[50%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                         <span>
-                           <Send size={25} />
+                           <Send size={23} />
                         </span>
                         <span className="text-nowrap">Contact Me</span>
                      </button>
