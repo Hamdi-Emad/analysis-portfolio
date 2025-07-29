@@ -1,0 +1,32 @@
+/* burger.css */
+
+.bm-burger-button {
+   display: none; /* نتحكم بزرنا مش بتاع المكتبة */
+}
+
+.bm-menu {
+   backdrop-filter: blur(16px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+   background-color: rgba(17, 25, 40, 0.95);
+   padding: 2.5rem 1.5rem 0;
+   font-size: 1.2rem;
+   height: 100vh;
+}
+
+.bm-item {
+   display: block;
+   padding: 1rem;
+   color: white;
+   text-decoration: none;
+   transition: 0.3s color;
+   font-size: 1.1rem;
+   border-radius: 5px;
+}
+
+.bm-item:hover {
+   color: white;
+}
+
+.bm-overlay {
+   background: rgba(0, 0, 0, 0.3);
+}

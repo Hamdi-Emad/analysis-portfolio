@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+   --background: #ffffff;
+   --foreground: #171717;
+}
+
+@theme inline {
+   --color-background: var(--background);
+   --color-foreground: var(--foreground);
+   --font-sans: var(--font-geist-sans);
+   --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+   }
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+   color: var(--foreground);
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.active {
+   color: #00a8cd;
+}
+
+.page-holder {
+   background-color: #111927;
+   background-image: radial-gradient(
+         at 47% 33%,
+         hsl(194.05, 100%, 40%) 0,
+         transparent 59%
+      ),
+      radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+
+.home-holder {
+   backdrop-filter: blur(25px) saturate(200%);
+   -webkit-backdrop-filter: blur(25px) saturate(200%);
+   background-color: rgba(17, 25, 40, 0.59);
+}
+
+.nav-blur {
+   background-color: transparent;
+}
+
+.nav-inner-blur {
+   backdrop-filter: blur(25px) saturate(200%);
+   -webkit-backdrop-filter: blur(25px) saturate(200%);
+   background-color: rgba(17, 25, 40, 0.9);
+}
