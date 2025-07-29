@@ -33,6 +33,14 @@ body {
          transparent 59%
       ),
       radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+
+   /* background-color: #111927;
+   background-image: radial-gradient(
+         at 47% 33%,
+         hsl(213.85, 89%, 52%) 0,
+         transparent 59%
+      ),
+      radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%); */
 }
 
 .home-holder {
