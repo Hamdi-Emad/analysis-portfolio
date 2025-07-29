@@ -34,7 +34,7 @@ export default function Landing() {
 
                   <h1 className="text-3xl lg:text-6xl text-center md:text-start text-white font-bold">
                      Hi, I'm <span className="text-[#00a8cd]">Hamdi</span>
-                     <span className="text-4xl lg:text-7xl block py-10 text-nowrap">
+                     <span className="text-4xl lg:text-7xl block py-10 text-nowrap transition-all">
                         <Typewriter
                            options={{
                               strings: ["DATA ANALYST"],
@@ -48,13 +48,13 @@ export default function Landing() {
                      </span>
                   </h1>
                   <div className="flex flex-col md:flex-row gap-3  items-center ">
-                     <button className="bg-[#00a8cd] w-[50%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
+                     <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                         <span>
                            <FileUser size={23} />
                         </span>
                         <span className="text-nowrap">View Resume</span>
                      </button>
-                     <button className="bg-[#00a8cd] w-[50%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
+                     <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                         <span>
                            <Send size={23} />
                         </span>
