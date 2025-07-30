@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
+
 export default async function Skills() {
    const response = await fetch(
       "https://raw.githubusercontent.com/Hamdi-Emad/analysis-api/refs/heads/main/skill.json",
@@ -42,6 +43,7 @@ export default async function Skills() {
                                           key={i + 100}
                                        >
                                           <span className=" shrink-0  md:pt-[0.5px]">
+
                                              <MdKeyboardDoubleArrowRight
                                                 size={25}
                                                 color="#009dcde8"
