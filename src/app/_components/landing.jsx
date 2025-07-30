@@ -16,7 +16,7 @@ export default function Landing() {
    }, []);
    return (
       <>
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen overflow-hidden">
             <div className="w-full text-sec flex justify-center items-center ">
                <div className=" w-full">
                   {/* <h1 className="text-3xl lg:text-6xl text-center md:text-start text-white font-bold">
