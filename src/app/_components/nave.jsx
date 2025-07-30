@@ -2,8 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
-import { usePathname } from "next/navigation";
-import Scrollspy from "react-scrollspy";
+
 
 export default function Navbar() {
    const [menuOpen, setMenuOpen] = useState(false);
