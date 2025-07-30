@@ -21,7 +21,7 @@ export default function Slider({ images }) {
             {images.map((projectImage, i) => (
                <div
                   key={i}
-                  className="w-full relative h-[350px] overflow-hidden rounded-[12px] shrink-0"
+                  className="w-full relative h-[300px] overflow-hidden rounded-[12px] shrink-0"
                >
                   <Image
                      priority
