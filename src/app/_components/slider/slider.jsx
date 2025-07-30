@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Slider({ images }) {
    const autoplayOptions = {
-      delay: 3000 + Math.floor(Math.random() * 4) * 1000, // delay عشوائي بين 3 و 5 ثواني  ||   // ← الوقت بين كل سلايد بالـ milliseconds (4000 = 4 ثواني)
+      delay: 3000 + Math.floor(Math.random() * 3) * 1000, // delay عشوائي بين 3 و 5 ثواني  ||   // ← الوقت بين كل سلايد بالـ milliseconds (4000 = 4 ثواني)
       stopOnInteraction: false,
       stopOnMouseEnter: true,
    };
