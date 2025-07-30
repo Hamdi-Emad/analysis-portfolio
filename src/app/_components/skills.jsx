@@ -17,7 +17,10 @@ export default async function Skills() {
                <div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                      {data.map((skill, i) => (
-                        <div key={i} className="skill-card p-5 shadow-lg group ">
+                        <div
+                           key={i}
+                           className="skill-card p-5 shadow-lg group "
+                        >
                            <div className="w-full h-40  flex justify-center items-center">
                               <Image
                                  src={skill.image}
@@ -35,17 +38,17 @@ export default async function Skills() {
                                  <ul className="">
                                     {skill.details.map((item, i) => (
                                        <li
-                                          className="flex justify-start items-center gap-1 py-3 my-2 hover:pl-2 md:hover:pl-4 transition-all hover:bg-[rgb(0,0,0,0.2)] rounded-lg duration-[0.3s] cursor-pointer"
+                                          className="flex items-start gap-1 py-3 my-2 hover:pl-2 md:hover:pl-4 transition-all hover:bg-[rgb(0,0,0,0.2)] rounded-lg duration-[0.3s] cursor-pointer"
                                           key={i + 100}
                                        >
-                                          <span className="flex justify-center items-center basis-1">
+                                          <span className=" shrink-0">
                                              <MdKeyboardDoubleArrowRight
                                                 size={25}
                                                 color="#009dcde8"
-                                                className="mb-[2px] "
+                                                className=""
                                              />
                                           </span>
-                                          <span className="text-[15px] md:text-[17px]">
+                                          <span className=" text-[15px] md:text-[17px] leading-[1.6]">
                                              {item}
                                           </span>
                                        </li>
