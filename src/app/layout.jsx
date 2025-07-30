@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Nave from "./_components/nave";
+import Nave from "./_components/navbar";
 import "./burger.css"; // هنعمل الملف ده دلوقتي
 import { Analytics } from "@vercel/analytics/react";
 
