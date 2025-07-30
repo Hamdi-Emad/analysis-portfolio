@@ -4,7 +4,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default async function Skills() {
    const response = await fetch(
-      "https://raw.githubusercontent.com/Hamdi-Emad/analysis-api/refs/heads/main/skill.json",
+      "https://raw.githubusercontent.com/Hamdi-Emad/analysis-api/refs/heads/main/skills.json",
       { cache: "no-store" }
    );
    const data = await response.json();

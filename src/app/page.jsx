@@ -1,5 +1,6 @@
 import About from "./_components/about";
 import Landing from "./_components/landing";
+import Projects from "./_components/projects";
 import Skills from "./_components/skills";
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
             <About />
 
             <Skills />
+
+            <Projects/>
          </div>
       </div>
    );
