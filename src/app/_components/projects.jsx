@@ -19,10 +19,10 @@ export default async function Projects() {
                      {data.map((project, i) => (
                         <div
                            key={i}
-                           className="skill-card p-[000] shadow-lg group overflow-hidden"
+                           className="skill-card p-[20px] shadow-lg group overflow-hidden"
                         >
                            <div className=" w-full relative h-[350px] overflow-hidden rounded-[12px]">
-                              <a href="" className="block">
+                              <a href={project.link} className="block" target="_blank" rel="noopener noreferrer">
                                  <Slider images={project.images} />
                               </a>
                               {/* <Image
