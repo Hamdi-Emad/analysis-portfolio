@@ -41,14 +41,14 @@ export default async function Skills() {
                                           className="flex items-start gap-1 py-3 my-2 hover:pl-2 md:hover:pl-4 transition-all hover:bg-[rgb(0,0,0,0.2)] rounded-lg duration-[0.3s] cursor-pointer"
                                           key={i + 100}
                                        >
-                                          <span className=" shrink-0">
+                                          <span className=" shrink-0  md:pt-[0.5px]">
                                              <MdKeyboardDoubleArrowRight
                                                 size={25}
                                                 color="#009dcde8"
                                                 className=""
                                              />
                                           </span>
-                                          <span className=" text-[15px] md:text-[17px] leading-[1.6]">
+                                          <span className="pt-[1px] md:pt-0 text-[15px] md:text-[17px] leading-[1.6]">
                                              {item}
                                           </span>
                                        </li>
