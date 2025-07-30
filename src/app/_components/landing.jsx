@@ -4,8 +4,16 @@ import { FileUser, Send } from "lucide-react";
 import Typewriter from "typewriter-effect";
 import landingImage from "../../../public/Analysis-pana2.png";
 import Image from "next/image";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function Landing() {
+   useEffect(() => {
+      AOS.init({
+         duration: 1000,
+         once: true,
+      });
+   }, []);
    return (
       <>
          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen">
@@ -32,7 +40,11 @@ export default function Landing() {
                      </span>
                   </h1> */}
 
-                  <h1 className="text-3xl lg:text-6xl text-center md:text-start text-white font-bold">
+                  <h1
+                     className="text-3xl lg:text-6xl text-center md:text-start text-white font-bold"
+                     data-aos="slide-down"
+                     data-aos-duration="4000"
+                  >
                      Hi, I'm <span className="text-[#00a8cd]">Hamdi</span>
                      <span className="text-4xl lg:text-7xl block py-10 text-nowrap transition-all">
                         <Typewriter
@@ -47,7 +59,10 @@ export default function Landing() {
                         />
                      </span>
                   </h1>
-                  <div className="flex flex-col md:flex-row gap-3  items-center ">
+                  <div
+                     className="flex flex-col md:flex-row gap-3  items-center "
+                     data-aos="slide-up"
+                  >
                      <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                         <span>
                            <FileUser size={23} />
@@ -64,7 +79,7 @@ export default function Landing() {
                </div>
             </div>
             <div className="w-full image-sec md:flex justify-center items-center overflow-hidden hidden">
-               <div className="w-full h-[300px] md:h-[1000px] lg:h-screen flex justify-center items-center relative ">
+               <div className="w-full h-[300px] md:h-[1000px] lg:h-screen flex justify-center items-center relative " data-aos="slide-left">
                   <Image
                      quality={100}
                      fill

@@ -18,13 +18,13 @@ export default async function Skills() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                      {data.map((skill, i) => (
                         <div key={i} className="skill-card p-5 shadow-lg group ">
-                           <div className="w-full h-40 flex justify-center items-center">
+                           <div className="w-full h-40  flex justify-center items-center">
                               <Image
                                  src={skill.image}
                                  width={100}
                                  height={100}
                                  alt={skill.name}
-                                 className="group-hover:scale-[1.2] transition-all duration-[0.4s]"
+                                 className="group-hover:scale-[1.2] transition-all duration-[0.4s] "
                               />
                            </div>
                            <div>
