@@ -3,7 +3,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
 
-
 export default function Navbar() {
    const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,8 +15,8 @@ export default function Navbar() {
    };
 
    return (
-      <nav className="fixed top-0 left-0 w-full bg-[#141819] z-50 shadow-md nav-blur">
-         <div className=" flex justify-between items-center px-4 py-4 container mx-auto nav-inner-blur">
+      <nav className="fixed top-0 left-0 right-0 w-full  bg-red-400 z-50 shadow-md nav-blur">
+         <div className=" flex justify-between items-center px-5 md:px-10 2xl:px-4 py-4 container mx-auto ">
             <Link
                href="/"
                className={`text-4xl flex items-center space-x-3 rtl:space-x-reverse hover:text-[#00a8cd] self-center transition-all font-semibold whitespace-nowrap text-white`}

@@ -38,7 +38,7 @@ export default function ProjectCard({ projectData }) {
                         /> */}
                      </div>
                      <div className="">
-                        <h3 className="text-center pt-8 pb-6 px-4 text-2xl text-[#00e1ffe8] font-[700]">
+                        <h3 className="text-center pt-8 pb-6 px-1  text-[20px]  truncate text-[#00e1ffe8] font-[700]">
                            {project.title}
                         </h3>
                         <p className="leading-[1.6] text-center px-6">

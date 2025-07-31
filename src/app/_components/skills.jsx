@@ -16,7 +16,7 @@ export default async function Skills() {
                   <h2>Skills</h2>
                </div>
                <div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  gap-5 ">
+                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-5 ">
                      {data.map((skill, i) => (
                         <div
                            key={i}
@@ -39,7 +39,7 @@ export default async function Skills() {
                                  <ul className="">
                                     {skill.details.map((item, i) => (
                                        <li
-                                          className="flex items-start gap-1 py-3 my-2 hover:pl-2 md:hover:pl-4 transition-all hover:bg-[rgb(0,0,0,0.2)] rounded-lg duration-[0.3s] cursor-pointer"
+                                          className="flex items-start gap-1 py-3 my-2 hover:pl-2 md:hover:pl-3 transition-all hover:bg-[rgb(0,0,0,0.2)] rounded-lg duration-[0.3s] cursor-pointer"
                                           key={i + 100}
                                        >
                                           <span className=" shrink-0  md:pt-[0.5px]">

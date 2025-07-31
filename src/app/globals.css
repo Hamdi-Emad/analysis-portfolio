@@ -49,11 +49,9 @@ body {
    background-color: rgba(17, 25, 40, 0.59);
 }
 
-.nav-blur {
-   background-color: transparent;
-}
 
-.nav-inner-blur {
+
+.nav-blur {
    backdrop-filter: blur(25px) saturate(200%);
    -webkit-backdrop-filter: blur(25px) saturate(200%);
    background-color: rgba(17, 25, 40, 0.9);
@@ -94,4 +92,3 @@ body {
    border-radius: 12px;
    border: 1px solid #00a8cd;
 }
-
