@@ -55,14 +55,14 @@ export default function Navbar() {
                      Home
                   </Link>
                </li>
-               <li>
+               {/* <li>
                   <Link
                      href="#about"
                      className={` text-md block py-2 px-3 rounded hover:bg-blue-700 md:hover:bg-transparent transition-all  md:p-0 text-white md:hover:text-[#00a8cd]`}
                   >
                      About
                   </Link>
-               </li>
+               </li> */}
                <li>
                   <Link
                      href="#skills"

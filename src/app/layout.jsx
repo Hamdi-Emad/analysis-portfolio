@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Nave from "./_components/navbar";
 import "./burger.css"; // هنعمل الملف ده دلوقتي
 import { Analytics } from "@vercel/analytics/react";
+import Navbar from "./_components/navbar";
+import Footer from "./_components/footer";
 
 const geistSans = Geist({
    variable: "--font-geist-sans",
@@ -34,9 +35,9 @@ export default function RootLayout({ children }) {
          <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#141819] page-holder `}
          >
-            {/* <Navbar/> */}
-            <Nave />
+            <Navbar />
             {children}
+            <Footer />
             <Analytics />
          </body>
       </html>

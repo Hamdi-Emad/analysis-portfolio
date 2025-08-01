@@ -30,7 +30,7 @@ body {
    background-image: radial-gradient(
          at 47% 33%,
          hsl(194.05, 100%, 40%) 0,
-         transparent 59%
+         transparent 60%
       ),
       radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
 
@@ -94,3 +94,8 @@ body {
 }
 
 
+.footer-card{
+   backdrop-filter: blur(25px) saturate(200%);
+   -webkit-backdrop-filter: blur(25px) saturate(200%);
+   background-color: rgba(17, 25, 40, 0.28);
+}

@@ -77,7 +77,7 @@ export default function Contact() {
                <form ref={form} onSubmit={sendEmail} className="mt-[8.5px]">
                   <div className="grid grid-cols-4 gap-7">
                      <div className="col-span-4 lg:col-span-2">
-                        {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                        {/* <label className="block mb-2 text-sm  text-gray-200">
                            Full Name
                         </label> */}
                         <input
@@ -90,7 +90,7 @@ export default function Contact() {
                      </div>
 
                      <div className="col-span-4 lg:mt-0 lg:col-span-2">
-                        {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                        {/* <label className="block mb-2 text-sm text-gray-200">
                            Phone Number
                         </label> */}
                         <input
@@ -103,7 +103,7 @@ export default function Contact() {
                      </div>
 
                      <div className="col-span-4">
-                        {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                        {/* <label className="block mb-2 text-sm text-gray-200">
                            Email address
                         </label> */}
                         <input
@@ -116,7 +116,7 @@ export default function Contact() {
                      </div>
 
                      <div className="col-span-4">
-                        {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                        {/* <label className="block mb-2 text-sm text-gray-200">
                            Message
                         </label> */}
                         <textarea
