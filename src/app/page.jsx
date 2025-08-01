@@ -7,7 +7,7 @@ import Skills from "./_components/skills";
 export default function Home() {
    return (
       <div className="home-holder">
-         <div className="container mx-auto px-5 md:px-10 2xl:px-7" id="home">
+         <div className="container mx-auto px-5 pb-10 md:px-10 2xl:px-7" id="home">
             <Landing />
 
             {/* <About /> */}

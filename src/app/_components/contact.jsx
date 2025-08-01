@@ -60,9 +60,21 @@ export default function Contact() {
             <h2>Contact Me</h2>
          </div>
          <div className="border border-[#00a8cd] rounded-[12px]">
+            {/* <div className="location h-[300px] p-7">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663487977!2d31.299663919782425!3d30.059556316678552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1753983225047!5m2!1sar!2seg"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-xl shadow-md w-full h-full"
+               ></iframe>
+            </div> */}
             <div className="grid grid-cols-1  lg:grid-cols-2 w-full gap-7 px-8 py-10 mx-auto  rounded-lg shadow-2xl   shadow-black/50">
 
-               <form ref={form} onSubmit={sendEmail} className="">
+               <form ref={form} onSubmit={sendEmail} className="mt-[8.5px]">
                   <div className="grid grid-cols-4 gap-7">
                      <div className="col-span-4 lg:col-span-2">
                         {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
@@ -142,20 +154,8 @@ export default function Contact() {
                      )}
                   </button>
                </form>
-               
+
                <div className="h-full mb-6">
-                  {/* <div className="location h-[68%]">
-                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663487977!2d31.299663919782425!3d30.059556316678552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1753983225047!5m2!1sar!2seg"
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        className="rounded-xl shadow-md w-full h-full"
-                     ></iframe>
-                  </div> */}
                   <div className="get-in-touch">
                      <div className="data-contact">
                         <div>
@@ -255,7 +255,6 @@ export default function Contact() {
                      </div>
                   </div>
                </div>
-               
             </div>
          </div>
       </div>
