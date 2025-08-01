@@ -99,3 +99,14 @@ body {
    -webkit-backdrop-filter: blur(25px) saturate(200%);
    background-color: rgba(17, 25, 40, 0.28);
 }
+
+
+.text-line::before {
+content: '';
+background-color: #00a8cd;
+position: absolute;
+width: 70px;
+height: 3px;
+left: 0;
+bottom: 0;
+}

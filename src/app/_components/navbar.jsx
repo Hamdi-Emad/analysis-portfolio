@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
+import { FaBars } from "react-icons/fa6";
 
 export default function Navbar() {
    const [menuOpen, setMenuOpen] = useState(false);
@@ -27,21 +28,9 @@ export default function Navbar() {
             {/* زرار فتح القائمة */}
             <button
                onClick={toggleMenu}
-               className="text-white p-2 rounded-md md:hidden hover:text-[#00a8cd] cursor-pointer"
+               className="text-white p-2 rounded-md md:hidden hover:text-[#00a8cd] transition cursor-pointer"
             >
-               <svg
-                  className="w-8 h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-               >
-                  <path
-                     strokeLinecap="round"
-                     strokeLinejoin="round"
-                     strokeWidth={2}
-                     d="M4 6h16M4 12h16M4 18h16"
-                  />
-               </svg>
+               <FaBars size={25}/>
             </button>
 
             {/* القائمة العادية في الديسكتوب */}
@@ -105,13 +94,13 @@ export default function Navbar() {
             >
                Home
             </Link>
-            <Link
+            {/* <Link
                href="#about"
                onClick={toggleMenu}
                className="menu-item hover:bg-[#00a8cd]"
             >
                About
-            </Link>
+            </Link> */}
             <Link
                href="#skills"
                onClick={toggleMenu}

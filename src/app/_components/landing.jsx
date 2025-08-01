@@ -6,6 +6,10 @@ import landingImage from "../../../public/Analysis-pana2.png";
 import Image from "next/image";
 import AOS from "aos";
 import { useEffect } from "react";
+import { BsWhatsapp } from "react-icons/bs";
+import { TbBrandGithubFilled, TbBrandGmail } from "react-icons/tb";
+import { IoCall } from "react-icons/io5";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 
 export default function Landing() {
    useEffect(() => {
@@ -63,7 +67,11 @@ export default function Landing() {
                      className="flex flex-col md:flex-row gap-3  items-center "
                      data-aos="slide-up"
                   >
-                     <a href="https://www.linkedin.com/in/hamdi-emad1/" target="_blank" className="w-full flex justify-center md:w-auto">
+                     <a
+                        href="https://www.linkedin.com/in/hamdi-emad1/"
+                        target="_blank"
+                        className="w-full flex justify-center md:w-auto"
+                     >
                         <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                            <span>
                               <FileUser size={23} />
@@ -71,7 +79,10 @@ export default function Landing() {
                            <span className="text-nowrap">View Resume</span>
                         </button>
                      </a>
-                     <a href="#contact" className="w-full flex justify-center md:w-auto">
+                     <a
+                        href="#contact"
+                        className="w-full flex justify-center md:w-auto"
+                     >
                         <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                            <span>
                               <Send size={23} />
@@ -79,6 +90,62 @@ export default function Landing() {
                            <span className="text-nowrap">Contact Me</span>
                         </button>
                      </a>
+                  </div>
+                  <div
+                     className="icons flex flex-wrap justify-center md:justify-start ps-1  items-center gap-5 mt-9"
+                     data-aos="slide-right"
+                     data-aos-duration="5000"
+                  >
+                     <div className="cursor-pointer bg-[#00a8cd] rounded-full hover:bg-white hover:text-[#0a66c2] transition hover:scale-[1.1] hover:rotate-[360deg] duration-[0.5s] ">
+                        <a
+                           href="https://www.linkedin.com/in/hamdi-emad1/"
+                           target="_blank"
+                           className="p-3 block"
+                           rel="noopener noreferrer"
+                        >
+                           <FaLinkedinIn size={22} />
+                        </a>
+                     </div>
+                     <div className="cursor-pointer bg-[#00a8cd] rounded-full hover:bg-white hover:text-[#333333] transition hover:scale-[1.1] hover:rotate-[360deg] duration-[0.5s] ">
+                        <a
+                           href="https://github.com/Hamdi-Emad"
+                           target="_blank"
+                           className="p-3 block"
+                           rel="noopener noreferrer"
+                        >
+                           <TbBrandGithubFilled size={22} />
+                        </a>
+                     </div>
+                     <div className="cursor-pointer bg-[#00a8cd]  rounded-full hover:bg-white hover:text-[#1877f2] transition hover:scale-[1.1] hover:rotate-[360deg] duration-[0.5s] ">
+                        <a
+                           href="https://www.facebook.com/hamdi.emad.509/"
+                           target="_blank"
+                           className="p-3 block"
+                           rel="noopener noreferrer"
+                        >
+                           <FaFacebookF size={22} />
+                        </a>
+                     </div>
+                     <div className="cursor-pointer  bg-[#00a8cd]  rounded-full hover:bg-white hover:text-[#ea4335] transition hover:scale-[1.1] hover:rotate-[360deg] duration-[0.5s] ">
+                        <a
+                           href="https://mail.google.com/mail/?view=cm&fs=1&to=hamdi2002em@mail.com"
+                           target="_blank"
+                           className="p-3 block"
+                           rel="noopener noreferrer"
+                        >
+                           <TbBrandGmail size={22} />
+                        </a>
+                     </div>
+                     <div className="cursor-pointer bg-[#00a8cd]  rounded-full hover:bg-white hover:text-[#25d366] transition hover:scale-[1.1] hover:rotate-[360deg] duration-[0.5s] ">
+                        <a
+                           href="https://wa.me/201212384862"
+                           target="_blank"
+                           className="p-3 block"
+                           rel="noopener noreferrer"
+                        >
+                           <BsWhatsapp size={22} />
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>

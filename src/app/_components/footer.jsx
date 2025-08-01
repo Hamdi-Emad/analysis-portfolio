@@ -1,3 +1,5 @@
+import DataDynamic from "./dateDynamic/dataDynamic";
+
 export default function Footer() {
    return (
       <footer className="mt-0 p-5 bg-gradient-to-b from-transparent to-[#0ab7ec0e] footer-card">
@@ -51,7 +53,7 @@ export default function Footer() {
                </li>
             </ul>
             <span className="text-sm sm:text-center text-gray-400">
-               All rights reserved © {new Date().getFullYear()}
+               All rights reserved © <DataDynamic/>
             </span>
          </div>
       </footer>
