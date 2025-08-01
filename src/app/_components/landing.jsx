@@ -63,7 +63,7 @@ export default function Landing() {
                      className="flex flex-col md:flex-row gap-3  items-center "
                      data-aos="slide-up"
                   >
-                     <a href="https://www.linkedin.com/in/hamdi-emad1/" target="_blank">
+                     <a href="https://www.linkedin.com/in/hamdi-emad1/" target="_blank" className="w-full flex justify-center md:w-auto">
                         <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                            <span>
                               <FileUser size={23} />
@@ -71,7 +71,7 @@ export default function Landing() {
                            <span className="text-nowrap">View Resume</span>
                         </button>
                      </a>
-                     <a href="#contact" className="block">
+                     <a href="#contact" className="w-full flex justify-center md:w-auto">
                         <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
                            <span>
                               <Send size={23} />
