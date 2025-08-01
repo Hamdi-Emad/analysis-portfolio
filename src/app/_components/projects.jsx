@@ -10,7 +10,7 @@ export default async function Projects() {
    const data = await response.json();
    return (
       <>
-         <div className="pt-40" id="projects">
+         <div className="pt-40 " id="projects">
             <div>
                <div className="sec-title  text-center pb-10">
                   <h2>Projects</h2>

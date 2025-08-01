@@ -76,8 +76,8 @@ export default function About() {
                      <div className="buttons flex justify-center items-center gap-5 ">
                         <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[16px]  rounded-[5px] ">
                            <a
-                              href="mailto:hamdi2002em@mail.com"
-                              // href="https://mail.google.com/mail/?view=cm&fs=1&to=hamdi2002em@mail.com"
+                              // href="mailto:hamdi2002em@mail.com"
+                              href="https://mail.google.com/mail/?view=cm&fs=1&to=hamdi2002em@mail.com"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex justify-between gap-2 items-center py-3 px-4"

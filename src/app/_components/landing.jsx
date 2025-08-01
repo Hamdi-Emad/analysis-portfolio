@@ -63,23 +63,30 @@ export default function Landing() {
                      className="flex flex-col md:flex-row gap-3  items-center "
                      data-aos="slide-up"
                   >
-                     <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
-                        <span>
-                           <FileUser size={23} />
-                        </span>
-                        <span className="text-nowrap">View Resume</span>
-                     </button>
-                     <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
-                        <span>
-                           <Send size={23} />
-                        </span>
-                        <span className="text-nowrap">Contact Me</span>
-                     </button>
+                     <a href="https://www.linkedin.com/in/hamdi-emad1/" target="_blank">
+                        <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
+                           <span>
+                              <FileUser size={23} />
+                           </span>
+                           <span className="text-nowrap">View Resume</span>
+                        </button>
+                     </a>
+                     <a href="#contact" className="block">
+                        <button className="bg-[#00a8cd] w-[60%] md:w-auto cursor-pointer hover:bg-[#009dcde8] transition text-[20px] py-3 px-4 rounded-[5px] flex justify-between gap-2 items-center">
+                           <span>
+                              <Send size={23} />
+                           </span>
+                           <span className="text-nowrap">Contact Me</span>
+                        </button>
+                     </a>
                   </div>
                </div>
             </div>
             <div className="w-full image-sec md:flex justify-center items-center overflow-hidden hidden">
-               <div className="w-full h-[300px] md:h-[1000px] lg:h-screen flex justify-center items-center relative " data-aos="slide-left">
+               <div
+                  className="w-full h-[300px] md:h-[1000px] lg:h-screen flex justify-center items-center relative "
+                  data-aos="slide-left"
+               >
                   <Image
                      quality={100}
                      fill

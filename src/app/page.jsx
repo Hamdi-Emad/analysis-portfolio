@@ -1,4 +1,5 @@
 import About from "./_components/about";
+import Contact from "./_components/contact";
 import Landing from "./_components/landing";
 import Projects from "./_components/projects";
 import Skills from "./_components/skills";
@@ -9,11 +10,13 @@ export default function Home() {
          <div className="container mx-auto px-5 md:px-10 2xl:px-7" id="home">
             <Landing />
 
-            <About />
+            {/* <About /> */}
 
             <Skills />
 
             <Projects/>
+
+            <Contact/>
          </div>
       </div>
    );

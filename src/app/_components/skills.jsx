@@ -16,11 +16,12 @@ export default async function Skills() {
                   <h2>Skills</h2>
                </div>
                <div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-5 ">
+                  {/* //* انا زودت درجة في الاتنين ميديا لو غيرت ابقي شيلهم */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-5 "> 
                      {data.map((skill, i) => (
                         <div
                            key={i}
-                           className="skill-card p-5 shadow-lg group "
+                           className="skill-card px-5 shadow-lg group "
                         >
                            <div className="w-full h-40  flex justify-center items-center">
                               <Image

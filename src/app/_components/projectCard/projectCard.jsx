@@ -17,7 +17,7 @@ export default function ProjectCard({ projectData }) {
                {visibleProjects.map((project, i) => (
                   <motion.div
                      key={i}
-                     className="skill-card p-[20px] shadow-lg group overflow-hidden"
+                     className="skill-card p-[20px] shadow-lg shadow-black/50 group overflow-hidden"
                   >
                      <div className=" w-full relative h-[300px] overflow-hidden rounded-[12px]">
                         <a
