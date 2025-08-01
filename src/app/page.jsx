@@ -3,7 +3,6 @@ import Contact from "./_components/contact";
 import Landing from "./_components/landing";
 import Projects from "./_components/projects";
 import Skills from "./_components/skills";
-import logoImage from "../../public/logo.png";
 
 export const metadata = {
    title: "Hamdi Emad | Data Analyst Portfolio",
@@ -46,7 +45,7 @@ export const metadata = {
       siteName: "Hamdi Emad | Data Analyst",
       images: [
          {
-            url: logoImage,
+            url: "https://raw.githubusercontent.com/Hamdi-Emad/analysis-portfolio/refs/heads/main/public/logo.png",
             width: 1200,
             height: 630,
             alt: "Dashboard and Data Analysis Projects by Hamdi Emad",
