@@ -19,6 +19,9 @@ html {
 body {
    color: #ededed;
    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Poppins", sans-serif;
+   font-family: "Roboto", sans-serif;
+   font-family: "Inter", sans-serif;
 }
 
 .active {
@@ -48,8 +51,6 @@ body {
    -webkit-backdrop-filter: blur(25px) saturate(200%);
    background-color: rgba(17, 25, 40, 0.59);
 }
-
-
 
 .nav-blur {
    backdrop-filter: blur(25px) saturate(200%);
@@ -93,20 +94,18 @@ body {
    border: 1px solid #00a8cd;
 }
 
-
-.footer-card{
+.footer-card {
    backdrop-filter: blur(25px) saturate(200%);
    -webkit-backdrop-filter: blur(25px) saturate(200%);
    background-color: rgba(17, 25, 40, 0.28);
 }
 
-
 .text-line::before {
-content: '';
-background-color: #00a8cd;
-position: absolute;
-width: 70px;
-height: 3px;
-left: 0;
-bottom: 0;
+   content: "";
+   background-color: #00a8cd;
+   position: absolute;
+   width: 70px;
+   height: 3px;
+   left: 0;
+   bottom: 0;
 }

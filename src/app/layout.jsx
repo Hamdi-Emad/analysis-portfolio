@@ -1,19 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./burger.css"; // هنعمل الملف ده دلوقتي
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
-
-const geistSans = Geist({
-   variable: "--font-geist-sans",
-   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-   variable: "--font-geist-mono",
-   subsets: ["latin"],
-});
 
 export const metadata = {
    title: "Hamdi Emad | Data Analyst Portfolio",
@@ -78,14 +67,24 @@ export default function RootLayout({ children }) {
                rel="stylesheet"
                href="https://unpkg.com/aos@next/dist/aos.css"
             />
+            <link
+               href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+               rel="stylesheet"
+            />
+            <link
+               href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+               rel="stylesheet"
+            />
+            <link
+               href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+               rel="stylesheet"
+            />
             <meta
                name="google-site-verification"
                content="qJvhc4dQCZms9Rf3LO9J1c6HO3oSn2Dd-cLgQqRvjug"
             />
          </head>
-         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#141819] page-holder `}
-         >
+         <body className={` antialiased bg-[#141819] page-holder `}>
             <Navbar />
             {children}
             <Footer />

@@ -20,9 +20,11 @@ import { TbBrandGithubFilled, TbBrandGmail } from "react-icons/tb";
 export default function Contact() {
    const form = useRef();
    const [success, setSuccess] = useState(false);
+   const [loading, setLoading] = useState(false);
 
    const sendEmail = (e) => {
       e.preventDefault();
+      setLoading(true);
 
       emailjs
          .sendForm(
@@ -34,11 +36,13 @@ export default function Contact() {
          .then(
             () => {
                setSuccess(true);
+               setLoading(false);
                form.current.reset();
             },
             (error) => {
                console.error(error.text);
                setSuccess(false);
+               setLoading(false);
             }
          );
    };
@@ -73,8 +77,10 @@ export default function Contact() {
                ></iframe>
             </div> */}
             <div className="grid grid-cols-1  lg:grid-cols-2 w-full gap-7 px-8 py-10 mx-auto  rounded-lg shadow-2xl   shadow-black/50">
-               <div >
-                  <h3 className="text-2xl text-white font-bold relative pb-[5px]  text-line">Send Message Us</h3>
+               <div>
+                  <h3 className="text-2xl text-white font-bold relative pb-[5px]  text-line">
+                     Send Message Us
+                  </h3>
                   <form ref={form} onSubmit={sendEmail} className="mt-7">
                      <div className="grid grid-cols-4 gap-4">
                         <div className="col-span-4 lg:col-span-2">
@@ -157,7 +163,9 @@ export default function Contact() {
                   </form>
                </div>
                <div className="mt-5 lg:mt-0">
-                  <h3 className="text-2xl text-white font-bold relative pb-[5px]  text-line">Get In Touch</h3>
+                  <h3 className="text-2xl text-white font-bold relative pb-[5px]  text-line">
+                     Get In Touch
+                  </h3>
                   <div className="h-full mb-6 mt-[18px]">
                      <div className="get-in-touch" id="get-contact">
                         <div className="data-contact">
