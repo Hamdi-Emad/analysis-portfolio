@@ -63,6 +63,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en" className="scroll-smooth">
          <head>
+            {/* خطوط ومكتبات */}
             <link
                rel="stylesheet"
                href="https://unpkg.com/aos@next/dist/aos.css"
@@ -79,6 +80,8 @@ export default function RootLayout({ children }) {
                href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
                rel="stylesheet"
             />
+
+            {/* التحقق من Google و Bing */}
             <meta
                name="google-site-verification"
                content="qJvhc4dQCZms9Rf3LO9J1c6HO3oSn2Dd-cLgQqRvjug"
@@ -86,6 +89,22 @@ export default function RootLayout({ children }) {
             <meta
                name="msvalidate.01"
                content="E72B61D55A3F9E12FE608312034CF8CC"
+            />
+
+            {/* 💡 إضافة مهمة لتحسين ظهور اسمك بدل Vercel */}
+            <meta property="og:site_name" content="Hamdi Emad" />
+            <script
+               type="application/ld+json"
+               dangerouslySetInnerHTML={{
+                  __html: `
+      {
+         "@context": "https://schema.org",
+         "@type": "WebSite",
+         "name": "Hamdi Emad",
+         "url": "https://analysis-portfolio.vercel.app"
+      }
+      `,
+               }}
             />
          </head>
          <body className={` antialiased bg-[#141819] page-holder `}>
