@@ -38,7 +38,7 @@ export default function Navbar() {
             <ul className="font-medium hidden md:flex  flex-col text-center p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700">
                <li>
                   <Link
-                     href="#home"
+                     href="/"
                      className="text-md block py-2 px-3 rounded hover:bg-blue-700 md:hover:bg-transparent transition-all  md:p-0 text-white md:hover:text-[#00a8cd]"
                   >
                      Home
@@ -88,7 +88,7 @@ export default function Navbar() {
             className=" text-center"
          >
             <Link
-               href="#home"
+               href="/"
                onClick={toggleMenu}
                className="menu-item hover:bg-[#00a8cd]"
             >
