@@ -90,22 +90,6 @@ export default function RootLayout({ children }) {
                name="msvalidate.01"
                content="E72B61D55A3F9E12FE608312034CF8CC"
             />
-
-            {/* 💡 إضافة مهمة لتحسين ظهور اسمك بدل Vercel */}
-            <meta property="og:site_name" content="Hamdi Emad" />
-            <script
-               type="application/ld+json"
-               dangerouslySetInnerHTML={{
-                  __html: `
-      {
-         "@context": "https://schema.org",
-         "@type": "WebSite",
-         "name": "Hamdi Emad",
-         "url": "https://analysis-portfolio.vercel.app"
-      }
-      `,
-               }}
-            />
          </head>
          <body className={` antialiased bg-[#141819] page-holder `}>
             <Navbar />
