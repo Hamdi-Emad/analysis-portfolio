@@ -83,6 +83,10 @@ export default function RootLayout({ children }) {
                name="google-site-verification"
                content="qJvhc4dQCZms9Rf3LO9J1c6HO3oSn2Dd-cLgQqRvjug"
             />
+            <meta
+               name="msvalidate.01"
+               content="E72B61D55A3F9E12FE608312034CF8CC"
+            />
          </head>
          <body className={` antialiased bg-[#141819] page-holder `}>
             <Navbar />
