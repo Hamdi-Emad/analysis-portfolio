@@ -140,21 +140,20 @@ export default function Contact() {
                            success
                               ? "bg-white"
                               : "bg-[#00a8cd] hover:bg-[#009dcde8]"
-                        } w-full px-6 py-3 mt-6 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 transform cursor-pointer rounded-md  focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50`}
+                        } w-full px-6 py-3 relative mt-6 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 transform cursor-pointer rounded-md  focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 h-13`}
+                        disabled={loading}
                      >
-                        {success ? (
+                        {loading ? (
+                           <div className="flex justify-center items-center">
+                              <span className="loader">Loading ...</span>
+                           </div>
+                        ) : success ? (
                            <div className="flex justify-center items-center gap-3 font-[900]">
-                              <span className="text-green-500">
-                                 {/* Message Sent Successfully */}
-                                 Done
-                              </span>
-                              <span>
-                                 <IoCheckmarkCircleSharp
-                                    size={25}
-                                    className="text-green-500"
-                                 />
-                                 {/* <MdDone size={25} className="text-green-500" /> */}
-                              </span>
+                              <span className="text-green-500">Done</span>
+                              <IoCheckmarkCircleSharp
+                                 size={25}
+                                 className="text-green-500"
+                              />
                            </div>
                         ) : (
                            <>Send</>
